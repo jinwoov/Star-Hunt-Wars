@@ -23,4 +23,4 @@ Cait Rowland
 ![play.html](./image/play.jpg)
 
 # Domain Model
-![Domain Model](./image/Domain-Model.jpeg)
+![Domain Model]
