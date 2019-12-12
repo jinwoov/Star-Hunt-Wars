@@ -26,17 +26,24 @@ body {
     padding: 50px 100px;
 }
 
+
 #button-a {
-    margin: 50px 30px;
-    widht
+    margin: 50px 0px;
+    margin-right: 130px;
+    width: 320px;
     padding: 50px 0px;
     border: 1px black solid;
+    display: inline-block
 
 }
+
 #button-b {
-    margin: 50px 30px;
+    margin: 50px 0px;
+    margin-left: 130px;
     padding: 50px 0px;
+    width: 320px;
     border: 1px black solid;
+    display: inline-block;
 }
 
 
