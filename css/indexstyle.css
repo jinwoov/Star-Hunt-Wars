@@ -1,0 +1,63 @@
+body {
+    width: 960px;
+    margin: auto;
+    background-color: black;
+    color: goldenrod;
+}
+
+#instruction-container {
+    width: 85%;
+    margin: 50px 50px 50px 50px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    display: inline-block;
+    border: goldenrod 5px solid;
+}
+
+#instructions {
+    width: 45%;
+    font-size: xx-large;
+    float: center;
+    padding: 20px 20px 20px 20px;
+    border: goldenrod 5px solid;
+    display: inline-block;
+}
+
+#game-instructions {
+    float: center;
+    font-display: inline-block;
+    margin: 30px 30px 30px 30px;
+    padding: 50px 50px 50px 50px;
+    border: goldenrod 5px solid;
+    color: goldenrod;
+    font-size: large;
+}
+
+#form-container {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#button-container {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+button {
+    background-color: goldenrod;
+    color: black;
+    font-size: xx-large;
+    width: 200px;
+    height: 100px;
+}
+
+button:hover {
+    background-color: rgb(175, 19, 5);
+    color: black;
+    font-size: xx-large;
+    width: 200px;
+    height: 100px;
+}
