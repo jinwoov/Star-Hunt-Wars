@@ -1,0 +1,59 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-image: url("/image/AboutUsImages/sw18.jpg");
+  background-color: #cccccc;
+  background-size: 1800px;
+  opacity: 0.95;
+  background-attachment: fixed;
+  font-family: 'Star Jedi', arial;
+}
+
+
+#ProfileSection {
+  /* margin-left: 30px; */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 210px;
+    height: 1000px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+    background: white;
+    border: white solid 1px;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+    font-family: 'Star Jedi', arial;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+    /* position: absolute; */
+    /* bottom: 0; */
+  }
