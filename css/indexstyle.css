@@ -16,6 +16,8 @@ body {
 
 #instructions {
     width: 45%;
+    font-family: 'Star Jedi', arial;
+    text-shadow: 4px 4px 4px #aaa;
     font-size: xx-large;
     float: center;
     padding: 20px 20px 20px 20px;
