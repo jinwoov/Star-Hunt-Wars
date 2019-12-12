@@ -21,7 +21,7 @@ function Strings (question, dark, light, answer, src, name) {
   this.dark = dark;
   this.light = light;
   this.answer = answer;
-  this.src = `../image/${src}.png`;
+  this.src = `../image/playImage/${src}.gif`;
   // this.name =
   questions.push(this.question);
   darkAnswer.push(this.dark);
@@ -39,7 +39,7 @@ function hide(elem) {
 }
 /////////////////////////////////
 function instantiate() {
-new Strings ('who owns bruce', 'Enoch', 'Cait', 'Cait', 'lightsaber-red');
+new Strings ('whos is the father of Luke', 'Enoch', 'Darth Vader', 'Darth Vader', 'darthVader');
 new Strings ('what is tow?', 'b4ye', 'cool', 'your right');
 new Strings ('what is three?', 'by1e', 'cool', 'your right');
 new Strings ('what is four?', 'b3ye', 'cool', 'your right');
