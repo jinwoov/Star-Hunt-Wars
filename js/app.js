@@ -5,6 +5,7 @@ var lightAnswer = [];
 var questions = [];
 var picture = [];
 var answers = [];
+var all = [];
 var questionBox = document.getElementById('question-box');
 var buttonBox = document.getElementById('button-box')
 var buttonOne = document.getElementById('button-a');
@@ -15,17 +16,20 @@ var round = 0;
 
 /////////////constructor/////////////
 
-function Strings (question, dark, light, answer) {
+function Strings (question, dark, light, answer, src, name) {
   this.question = question;
   this.dark = dark;
   this.light = light;
   this.answer = answer;
-
+  this.src = `../image/${src}.png`;
+  // this.name =
   questions.push(this.question);
   darkAnswer.push(this.dark);
   lightAnswer.push(this.light);
   answers.push(this.answer);
+  picture.push(this.src);
   
+  all.push(this)
 
 }
 
@@ -35,7 +39,7 @@ function hide(elem) {
 }
 /////////////////////////////////
 function instantiate() {
-new Strings ('what is one?', 'b424ye', 'cool', 'your right');
+new Strings ('who owns bruce', 'Enoch', 'Cait', 'Cait', 'lightsaber-red');
 new Strings ('what is tow?', 'b4ye', 'cool', 'your right');
 new Strings ('what is three?', 'by1e', 'cool', 'your right');
 new Strings ('what is four?', 'b3ye', 'cool', 'your right');
@@ -49,8 +53,19 @@ new Strings ('what is one?', 'bye', 'cool', 'your right');
 }
 
 function handleClick(event) {
+  var clickButton = event.target.textContent;
+  console.log(clickButton)
+  if (clickButton === answers[round]) {
+    renderAnswer();
+  } else {
+    answerBox.textContent = 'you are wrong!'
+  }
   round++;
   renderQuestion();
+  // hide(buttonA);
+  // hide(buttonB)
+  // createButton();
+  // makeButton();
 }
 
 console.log()
@@ -58,13 +73,40 @@ function renderQuestion() {
   questionBox.textContent = questions[round];
   buttonOne.textContent = lightAnswer[round];
   buttonTwo.textContent = darkAnswer[round];
-  answerBox.textContent = answers[round];
-  // questionImage.src = picture[round].src;
+  questionImage.src = picture[round];
+}
+
+function renderAnswer() {
+  answerBox.textContent = 'you are right!';
 }
 
 
-instantiate();
-buttonBox.addEventListener('click', handleClick);
-// buttonTwo.addEventListener('click', handleClick);
-renderQuestion()
+// var buttonA = document.createElement('p');
+// var buttonB = document.createElement('p');
+// function createButton() {
+//   buttonA = document.createElement('p');
+//   buttonB = document.createElement('p');
+// }
+// function makeButton() {
+//   buttonA.textContent = darkAnswer[round];
+//   buttonBox.appendChild(buttonA)
+//   buttonB.textContent = lightAnswer[round];
+//   buttonBox.appendChild(buttonB);
+// }
 
+
+
+// function renderAnswer() {
+  //   if ()
+  // }
+  
+  
+  instantiate();
+  buttonOne.addEventListener('click', handleClick);
+  buttonTwo.addEventListener('click', handleClick);
+  console.log(picture[round]);
+  // buttonTwo.addEventListener('click', handleClick);
+  console.log(all[round].question)
+  renderQuestion();
+  // makeButton();
+  
