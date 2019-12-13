@@ -17,14 +17,18 @@ body {
 
 #imagebox{
     border: 2px black solid;
-    padding: 300px 390px;
-    margin: 30px 0px;
+   
 }
 
 #question-box {
     border: 1px black solid;
     padding: 50px 100px;
 }
+
+#question-image {
+    width: 600px;
+}
+
 
 
 #button-a {
@@ -33,8 +37,13 @@ body {
     width: 320px;
     padding: 50px 0px;
     border: 1px black solid;
-    display: inline-block
+    display: inline-block;
+    border-radius: 10px;
 
+}
+
+#button-a:hover {
+    box-shadow: 10px;
 }
 
 #button-b {
@@ -44,6 +53,7 @@ body {
     width: 320px;
     border: 1px black solid;
     display: inline-block;
+    border-radius: 10px;
 }
 
 
