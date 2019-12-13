@@ -13,6 +13,7 @@ var buttonTwo = document.getElementById('button-b');
 var answerBox = document.getElementById('answer')
 var questionImage = document.getElementById('question-image');
 var round = 0;
+var score = 0;
 
 /////////////constructor/////////////
 
@@ -29,7 +30,7 @@ function Strings (question, dark, light, answer, src, name) {
   answers.push(this.answer);
   picture.push(this.src);
   
-  all.push(this)
+  // all.push(this)
 
 }
 
@@ -39,12 +40,12 @@ function hide(elem) {
 }
 /////////////////////////////////
 function instantiate() {
-new Strings ('whos is the father of Luke', 'Enoch', 'Darth Vader', 'Darth Vader', 'darthVader');
-new Strings ('what is tow?', 'b4ye', 'cool', 'your right');
-new Strings ('what is three?', 'by1e', 'cool', 'your right');
-new Strings ('what is four?', 'b3ye', 'cool', 'your right');
-new Strings ('what is five?', 'bye3', 'cool', 'your right');
-new Strings ('what is six?', 'by2e', 'cool', 'your right');
+  new Strings ('what is this robot?', 'BB8', 'R2D2', 'R2D2', 'bb8');
+  new Strings ('Which group are these guys belong in?', 'rebellion', 'empire', 'empire', 'rebel');
+  new Strings ('Is this the wise Yoda or 50 year old Yoda?', 'wise', '50', '50', 'baby-yoda');
+  new Strings ('whos is the father of Luke', 'Enoch', 'Darth Vader', 'Darth Vader', 'darthVader');
+  new Strings ('Mandalorian land on to the new planet and had found yoda would he save him?', 'bye3', 'cool', 'your right');
+  new Strings ('what is six?', 'by2e', 'cool', 'your right');
 new Strings ('what is seven?', 'bye', 'cool', 'your right');
 new Strings ('what is eight?', 'bye', 'cool', 'your right');
 new Strings ('what is one?', 'bye', 'cool', 'your right');
@@ -57,15 +58,14 @@ function handleClick(event) {
   console.log(clickButton)
   if (clickButton === answers[round]) {
     renderAnswer();
+    score++
   } else {
     answerBox.textContent = 'you are wrong!'
+    score--;
   }
   round++;
   renderQuestion();
-  // hide(buttonA);
-  // hide(buttonB)
-  // createButton();
-  // makeButton();
+  console.log(score)
 }
 
 console.log()
