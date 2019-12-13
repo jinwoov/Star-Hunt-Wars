@@ -6,23 +6,29 @@ body {
 
 }
 
+header {
+    position: fixed;
+    width: 100%;
+}
+
 .topnav {
     background-color: goldenrod;
     border: 1px solid black;
     border-width: 1px 0;
     list-style: none;
     margin-left: 0;
-    margin: 0;
+    margin-right: 0;
     text-align: center;
     height: 40px;
     padding-bottom: 10px;
-
+    
 }
 
 .topnav li {
     display: inline;
     padding-right: 5em;
     padding-left: 5em;
+    font-size: 20px;
 }
 
 .topnav a {
@@ -30,5 +36,35 @@ body {
 
 }
 
+.activePage {
+    all: unset;
+    font-weight: bolder;
+    text-decoration: none;
+    color: inherit;
+}
 
-Test TEst Test 
+.topnav a:link {
+    color: white;
+}
+
+.topnav a:visited {
+    color:green;
+}
+
+.topnav a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a:active {
+    color: black;
+}
+
+
+
+footer {
+    border-top: goldenrod solid 2px;
+    text-align: center;
+
+}

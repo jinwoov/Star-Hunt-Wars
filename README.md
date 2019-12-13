@@ -35,3 +35,9 @@ Cait Rowland
 # Domain Model
 ![domainModel](./image/playhtmldomain.jpeg)
 
+
+#Resources 
+Moving star background: 
+https://zcode.io/tutorials/creation-lightsaber-css-animation
+
+
