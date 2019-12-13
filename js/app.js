@@ -106,7 +106,7 @@ function renderAnswer() {
   buttonTwo.addEventListener('click', handleClick);
   console.log(picture[round]);
   // buttonTwo.addEventListener('click', handleClick);
-  console.log(all[round].question)
+  // console.log(all[round].question)
   renderQuestion();
   // makeButton();
   
