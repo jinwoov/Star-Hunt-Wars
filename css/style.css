@@ -1,11 +1,5 @@
 /*using this for play.html*/
 
-.lightsaber {
-    margin-top: 100px;
-    padding: 50px 200px;
-    display: inline-block;
-    border: 1px black solid;
-}
 
 main {
     text-align: center;
@@ -16,22 +10,103 @@ body {
 }
 
 #imagebox{
-    border: 2px black solid;
-   
+    margin-bottom: 50px;
 }
+
+#counter {
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px black solid;
+    height: 30px;
+    width: 700px;
+    margin-bottom:20px;
+    border-radius: 15%;
+}
+
+#red {
+    width:330px;
+    height: 28px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* border: 1px black solid; */
+    display: inline-block;
+}
+
+#green {
+    width:330px;
+    height: 28px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* border: 1px black solid; */
+    display: inline-block;
+}
+
+#handle {
+    display:inline-block;
+    /* left:45%; */
+    width:45px;
+    /* background-color: gray; */
+    height:28px;
+    vertical-align: center;
+    background-image: radial-gradient( red 40%, gray 50%);
+    border-radius: 5px;
+}
+
+#red-counter4 {
+    border-radius:  40% 0 0 40%;
+}
+
+#green-counter1 {
+    border-radius: 0 40% 40% 0;
+}
+
+#green div {
+    display: inline-block;
+    width: 20%;
+    height:85%;
+    margin-top: 2px;
+    background-image: linear-gradient(green, white, green);
+    float: left;
+}
+
+
+
+#red div {
+    display: inline-block;
+    width: 20%;
+    height:85%;
+    margin-top: 2px;
+    background-image: linear-gradient(red, white, red);
+    float: right;
+}
+
 
 #question-box {
     border: 1px black solid;
     padding: 50px 100px;
+    font-size: 35px;
 }
 
 #question-image {
-    width: 600px;
+    width: 700px;
+    vertical-align: center;
 }
+
+#answer {
+        /* animation:fadeIn 3s;f
+        }
+      @keyframes fadeIn{
+        0%{opacity:0;}  
+        80%{opacity:0;}
+        100%{opacity:1;} */
+        }
 
 
 
 #button-a {
+    font-size: 40px;
     margin: 50px 0px;
     margin-right: 130px;
     width: 320px;
@@ -43,10 +118,11 @@ body {
 }
 
 #button-a:hover {
-    box-shadow: 10px;
+    box-shadow: 2px -2px 5px 5px;
 }
 
 #button-b {
+    font-size: 40px;
     margin: 50px 0px;
     margin-left: 130px;
     padding: 50px 0px;
@@ -56,7 +132,137 @@ body {
     border-radius: 10px;
 }
 
+#button-b:hover {
+    box-shadow: 2px -2px 5px 5px;
+}
+
+/* // //////////// */
+
+.the-demo {
+    float: right;
+}
 
 
+#first { 
+    position: relative; 
+    bottom:50px;
+    right:100px;
+}
+
+.lightsaber label {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 88;
+	text-indent: -9999px;
+	width: 15px;
+	height: 50px;
+	border-bottom: solid 4px grey;
+	border-top: solid 5px grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background: rgb(226,226,226); /* Old browsers */
+	background: linear-gradient(to right, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
+	background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+}
+
+.lightsaber .switch {
+	background: #B94A37;
+	width: 5px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	bottom: 25px;
+	left: 13px;
+	transition: left 200ms;
+	-moz-transition: left 200ms;
+	-webkit-transition: left 200ms;
+	-o-transition: left 200ms;
+	-ms-transition: left 200ms;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+}
+
+.lightsaber input[type=checkbox] {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-o-opacity: 0;
+	-ms-opacity: 0;
+	z-index: 77;
+}
+
+.lightsaber .plasma {
+	transition: height 300ms,;
+	-moz-transition: height 300ms;
+	-webkit-transition: height 300ms;
+	-o-transition: height 300ms;
+	-ms-transition: height 300ms;
+	border-radius: 12px 12px 0 0;
+	position: absolute;
+	bottom: 55px;
+	left: 2px;
+	width: 10px;
+	display: block;
+	filter: blur(1px);
+	-moz-filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	height: 0;
+}
 
 
+.lightsaber input[type=checkbox]:checked ~ div.plasma {
+	height: 250px;
+}
+
+.lightsaber input[type=checkbox]:hover ~ div.switch {
+	background: #c09853;
+	left: 12px;
+}
+
+.lightsaber input[type=checkbox]:checked ~ div.switch {
+	background: #468847;
+}
+
+.yoda {
+	background: rgb(135,220,90); /* Old browsers */
+	background: linear-gradient(to right, rgb(135,220,90) 0%,rgb(254,254,254) 30%,rgb(254,254,254) 50%,rgb(254,254,254) 70%,rgb(135,220,90) 100%); /* W3C */
+	background: -moz-linear-gradient(left, rgb(135,220,90) 0%, rgb(254,254,254) 30%, rgb(254,254,254) 50%, rgb(254,254,254) 70%, rgb(135,220,90) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(135,220,90)), color-stop(30%,rgb(254,254,254)), color-stop(50%,rgb(254,254,254)), color-stop(70%,rgb(254,254,254)), color-stop(100%,rgb(135,220,90))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgb(135,220,90) 0%,rgb(254,254,254) 30%,rgb(254,254,254) 50%,rgb(254,254,254) 70%,rgb(135,220,90) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgb(135,220,90) 0%,rgb(254,254,254) 30%,rgb(254,254,254) 50%,rgb(254,254,254) 70%,rgb(135,220,90) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgb(135,220,90) 0%,rgb(254,254,254) 30%,rgb(254,254,254) 50%,rgb(254,254,254) 70%,rgb(135,220,90) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dc5a', endColorstr='#87dc5a',GradientType=1 ); /* IE6-9 */
+	animation-name: yoda;
+	-moz-animation-name: yoda;
+	-webkit-animation-name: yoda;
+	-o-animation-name: yoda;
+	-ms-animation-name: yoda;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+}

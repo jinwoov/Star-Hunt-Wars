@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,63 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <a href="https://placeholder.com"><center><img src="https://via.placeholder.com/350x150"></center></a>
+            <a href="https://placeholder.com">
+                <center><img src="https://via.placeholder.com/350x150"></center>
+            </a>
         </div>
         <div class="topnav">
-            <a href="https://placeholder.com"><center><img src="https://via.placeholder.com/960x30"></center></a>
+            <a href="https://placeholder.com">
+                <center><img src="https://via.placeholder.com/960x30"></center>
+            </a>
             <ul>
                 <li><a href="../html/">HOME</a></li>
                 <li><a href="../html/play.html">PLAY GAME</a></li>
                 <li><a href="../html/aboutus.html">ABOUT US</a></li>
             </ul>
-         </div>
-     </header>
+        </div>
+    </header>
     <main>
-        <div class='lightsaber'>lightsaber</div>
-        <div class='lightsaber'>lightsaber</div>
+        <!-- <div class='lightsaber'>
+            <img src="" alt="">
+        </div> -->
+
+            <div id='red'>
+                <div id='red-counter1'></div>
+                <div id='red-counter2'></div>
+                <div id='red-counter3'></div>
+                <div id='red-counter4'></div>
+            </div>
+            <div id='handle'></div>
+            <div id='green'>
+                <div id='green-counter1'></div>
+                <div id='green-counter2'></div>
+                <div id='green-counter3'></div>
+                <div id='green-counter4'></div>
+            </div>
         <section id=imagebox>
             <img id='question-image' src='' alt='' />
         </section>
+        <section class="the-demo">
+            <div class="example-item">
+                <div class="lightsaber" id='first'>
+                    <label for="yoda-example"></label>
+                    <input type="checkbox" id="yoda-example">
+                    <div class="switch"></div>
+                    <div class="plasma yoda"></div>
+                </div>
+            </div>
+        </section>
+
         <form>
             <fieldset>
                 <p id='answer'></p>
                 <p id='question-box'></p>
             </fieldset>
-            
+
             <section id='button-box'>
                 <p id='button-a' value='' type='submit'>Button 1</p>
                 <p id='button-b' value='' type='submit'>Button 2</p>
@@ -43,10 +75,13 @@
 
     </main>
     <footer>
-        <a href="https://placeholder.com"><center><img src="https://via.placeholder.com/960x10"></center></a></a>
+        <a href="https://placeholder.com">
+            <center><img src="https://via.placeholder.com/960x10"></center>
+        </a></a>
         <p>Created By: Team Star Hunt Wars</p>
         <p class="">Broiler plate text where we will put disclaimers in small text</p>
     </footer>
     <script src="../js/app.js"></script>
 </body>
+
 </html>
