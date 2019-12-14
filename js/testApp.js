@@ -1,3 +1,5 @@
+
+// Star Background
 window.requestAnimFrame = (function () { return window.requestAnimationFrame; })();
 var canvas = document.getElementById('space');
 var c = canvas.getContext('2d');
@@ -74,12 +76,7 @@ function drawStars() {
 
     c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
     c.fillStyle = 'rgba(255, 255, 255, ' + star.o + ')';
-    //c.fill();
+    c.fill();
   }
 }
 executeFrame();
-
-
-$('.handle').click(function(){
-  $('.back').toggleClass('open');
-});
