@@ -5,6 +5,7 @@ var buttonContentTwo = [];
 var questions = [];
 var picture = [];
 var answers = [];
+var all = [];
 var questionBox = document.getElementById('question-box');
 var buttonOne = document.getElementById('button-a');
 var buttonTwo = document.getElementById('button-b');
@@ -26,7 +27,7 @@ var greenCounterFour = document.getElementById('green-counter4');
 
 /////////////constructor/////////////
 
-function Strings (question, one, two, answer, src, name) {
+function Strings (question, one, two, answer, src) {
   this.question = question;
   this.one = one;
   this.two = two;
@@ -38,8 +39,8 @@ function Strings (question, one, two, answer, src, name) {
   buttonContentTwo.push(this.two);
   answers.push(this.answer);
   picture.push(this.src);
-  
-  // all.push(this)
+
+  all.push(this);
 
 }
 
@@ -50,16 +51,11 @@ function hide(elem) {
 function show(elem) {
   elem.style.display = 'inline-block';
 }
-function colorRed(elem) {
-  elem.style.backgroundColor = 'red';
-}
-function colorBlank(elem) {
-  elem.style.backgroundColor = 'none';
-}
+
 ///////////////instantiate//////////////////
 function instantiate() {
-  new Strings ('Mandolorian captured bunch of smuggler on his ship would he capture them or release?', 'Capture', 'Release', 'Release', 'bounty-robot');
-  new Strings ('Arms deal was discovered and in-midst of that you find Yoda, would you save him or leave him there?', 'save him', 'leave him', 'save him', 'rebel');
+  new Strings ('Mandolorian captured bunch of smuggler on his ship would he capture them or release?', 'Capture', 'Release', 'Release', 'mandalorian');
+  new Strings ('Arms deal was discovered and in-midst of that you find Yoda, would you save him or leave him there?', 'save him', 'leave him', 'save him', 'bounty-robot');
   new Strings ('Is this the wise Yoda or 50 year old Yoda?', 'wise', '50', '50', 'baby-yoda');
   new Strings ('whos is the father of Luke', 'Enoch', 'Darth Vader', 'Darth Vader', 'darthVader');
   new Strings ('Mandalorian land on to the new planet and had found yoda would he save him?', 'bye3', 'cool', 'your right');
@@ -84,21 +80,21 @@ function handleClick(event) {
   round++;
   renderQuestion();
   if (score === 0) {
-    hide(redCounterFour)
-    hide(greenCounterOne)
+    hide(redCounterFour);
+    hide(greenCounterOne);
   } else if (score === -1) {
     show(redCounterFour);
-    hide(redCounterThree)
+    hide(redCounterThree);
   } else if (score === -2) {
     show(redCounterThree);
     hide(redCounterTwo);
   } else if (score === -3) {
     show(redCounterTwo);
-    hide(redCounterOne)
+    hide(redCounterOne);
   } else if (score === -4) {
-    show (redCounterOne)
+    show (redCounterOne);
   } else if (score < -4) {
-    lightSaberYoda.checked = "checked";
+    lightSaberYoda.checked = 'checked';
   } else if (score === 1) {
     show(greenCounterOne);
     hide(greenCounterTwo);
@@ -109,9 +105,9 @@ function handleClick(event) {
     show(greenCounterThree);
     hide(greenCounterFour);
   } else if (score === 4) {
-    show (greenCounterFour)
+    show (greenCounterFour);
   } else if (score > 4) {
-    lightSaberYoda.checked = "checked";
+    lightSaberYoda.checked = 'checked';
   }
 }
 // console.log(score);
@@ -133,13 +129,13 @@ function getData() {
   name = getName;
 }
 
-  
-  
+
+
 instantiate();
 getData();
 buttonOne.addEventListener('click', handleClick);
 buttonTwo.addEventListener('click', handleClick);
-renderQuestion();;
+renderQuestion();
 hide(redCounterOne);
 hide(redCounterTwo);
 hide(redCounterThree);

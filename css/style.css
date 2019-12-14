@@ -91,7 +91,9 @@ body {
 
 #question-image {
     width: 700px;
-    vertical-align: center;
+	vertical-align: center;
+	border: 2px solid black;
+	margin-top: 10px;
 }
 
 #answer {
@@ -114,11 +116,13 @@ body {
     border: 1px black solid;
     display: inline-block;
     border-radius: 10px;
-
+	background-color: black;
+	color: white;
 }
 
 #button-a:hover {
-    box-shadow: 2px -2px 5px 5px;
+	box-shadow: 2px -2px 5px 5px;
+	color: #FFE81F;
 }
 
 #button-b {
@@ -127,13 +131,16 @@ body {
     margin-left: 130px;
     padding: 50px 0px;
     width: 320px;
-    border: 1px black solid;
+    border: 1px #FFE81F solid;
     display: inline-block;
-    border-radius: 10px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
 }
 
 #button-b:hover {
-    box-shadow: 2px -2px 5px 5px;
+	box-shadow: 2px -2px 5px 5px;
+	color: #FFE81F;
 }
 
 /* // //////////// */
