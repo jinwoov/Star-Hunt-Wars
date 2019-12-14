@@ -287,4 +287,19 @@ body {
 
 #high-score > h1 {
 	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+table {
+margin: 0 auto;
+}
+
+th {
+	font-weight: bold;
+	font-size: 25px;
+	padding: 2px 10px;
+}
+
+td {
+	font-size: 25px;
 }
