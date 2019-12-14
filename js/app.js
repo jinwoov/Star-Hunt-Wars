@@ -106,10 +106,8 @@ function handleClick(event) {
   } else if (score === -3) {
     show(redCounterTwo);
     hide(redCounterOne);
-  } else if (score === -4) {
+  } else if (score <= -4) {
     show(redCounterOne);
-  } else if (score < -4) {
-    lightSaberYoda.checked = 'checked';
   } else if (score === 1) {
     show(greenCounterFour);
     hide(greenCounterTwo);
@@ -119,10 +117,8 @@ function handleClick(event) {
   } else if (score === 3) {
     show(greenCounterThree);
     hide(greenCounterFour);
-  } else if (score === 4) {
+  } else if (score >= 4) {
     show(greenCounterOne);
-  } else if (score > 4) {
-    lightSaberYoda.checked = 'checked';
   }
 
   if(round === 10) {
@@ -132,7 +128,7 @@ function handleClick(event) {
     hide(greenBox);
     hide(questionImage);
     hide(handleBox);
-    hide(lightSaber);
+    // hide(lightSaber);
     hide(answerBox);
     new Storingscore (name, score);
     for (var i=0; i <scoreStorage.length; i++ ){
