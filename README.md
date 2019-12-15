@@ -40,4 +40,7 @@ Cait Rowland
 Moving star background: 
 https://zcode.io/tutorials/creation-lightsaber-css-animation
 
+Lightsaber code was derived from: 
+https://codepen.io/GeoffreyCrofte/pen/jGgIo
+
 
