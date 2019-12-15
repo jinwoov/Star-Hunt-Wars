@@ -1,15 +1,12 @@
-
+'use scrict';
 // Star Background
 window.requestAnimFrame = (function () { return window.requestAnimationFrame; })();
 var canvas = document.getElementById('space');
 var c = canvas.getContext('2d');
-
 var numStars = 1900;
 var radius = '0.' + Math.floor(Math.random() * 9) + 1;
 var focalLength = canvas.width * 2;
-var warp = 0;
 var centerX, centerY;
-
 var stars = [], star;
 var i;
 
@@ -56,7 +53,7 @@ function drawStars() {
   var pixelX, pixelY, pixelRadius;
 
   // Resize to the screen
-  if (canvas.width != window.innerWidth || canvas.width != window.innerWidth) {
+  if (canvas.width !== window.innerWidth || canvas.width !== window.innerWidth) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     initializeStars();
