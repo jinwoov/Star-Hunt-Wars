@@ -1,16 +1,18 @@
+//////////////////////global/////////////////////////
 var enterName = document.getElementById('name').value;
-var button = document.getElementById('button-container')
+var button = document.getElementById('button-container');
 
+
+
+/////////////////////Save Name///////////////////////////////
 function saveData () {
-    enterName = document.getElementById('name').value;
-    localStorage.setItem('name', enterName);
-  }
-
-
-//   console.log(enterName)
-function handleClick() {
-    // console.log(document.getElementById("name").value);
-    saveData()
+  enterName = document.getElementById('name').value;
+  localStorage.setItem('name', enterName);
 }
 
-  button.addEventListener('click', handleClick);
+
+function handleClick() {
+  saveData();
+}
+
+button.addEventListener('click', handleClick);
