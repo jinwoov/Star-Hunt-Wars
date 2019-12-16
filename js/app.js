@@ -29,7 +29,6 @@ var greenCounterThree = document.getElementById('green-counter3');
 var greenCounterFour = document.getElementById('green-counter4');
 var highScore = document.getElementById('high-score');
 var userScore = document.getElementById('user-score');
-var linkButton = document.getElementById('replayButton')
 
 //////////////////////////constructor//////////////////////////
 
@@ -97,6 +96,7 @@ function handleClick(event) {
   showRounds();
   renderQuestion();
   if (score === 0) {
+    answerBox.style.color = 'red';
     hide(redCounterFour);
     hide(greenCounterFour);
   } else if (score === -1) {
@@ -130,14 +130,12 @@ function handleClick(event) {
     hide(greenBox);
     hide(questionImage);
     hide(handleBox);
-    // hide(lightSaber);
     hide(answerBox);
     new Storingscore(name, score);
     for (var i = 0; i < scoreStorage.length; i++) {
-      previousStorage.push(scoreStorage[i])
+      previousStorage.push(scoreStorage[i]);
     }
     highScoreList();
-    // show(linkButton);
     saveData();
   }
 }
