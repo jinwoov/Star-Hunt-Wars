@@ -486,7 +486,9 @@ td {
 	font-size: 25px;
 }
 
-#handleGame {
+/* #counterBox {} */
+
+#counterBox {
     display:inline-block;
     /* left:45%; */
     width:45px;
