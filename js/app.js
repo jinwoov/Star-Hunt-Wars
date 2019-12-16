@@ -18,7 +18,7 @@ var score = 0;
 var name;
 var redBox = document.getElementById('red');
 var greenBox = document.getElementById('green');
-var handleBox = document.getElementById('handle')
+var handleBox = document.getElementById('counterBox')
 var redCounterOne = document.getElementById('red-counter1');
 var redCounterTwo = document.getElementById('red-counter2');
 var redCounterThree = document.getElementById('red-counter3');
