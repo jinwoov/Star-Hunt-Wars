@@ -470,6 +470,7 @@ main {
 #high-score > h1 {
 	font-size: 50px;
 	margin-bottom: 20px;
+	font-family: 'Play', sans-serif;
 }
 
 table {
