@@ -10,7 +10,7 @@ body {
   width: 960px;
   margin: 0 auto;
   margin-top: 50px;
-  background-image: url("/image/AboutUsImages/sw18.jpg");
+  /* background-image: url("/image/AboutUsImages/sw18.jpg"); */
   background-color: black;
   opacity: 0.95;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
   /* Endless Warp Cockpit Shakey */
   /* background-image: url(https://media.giphy.com/media/3owvKgRjmrtgJikO7C/source.gif); */
   /* background-image: url(https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/source.gif); */
-  background-image: url(https://static.wixstatic.com/media/26b39c_a1c5069b3c734396ab35a5d0d949b336~mv2.gif);
+  /* background-image: url(https://static.wixstatic.com/media/26b39c_a1c5069b3c734396ab35a5d0d949b336~mv2.gif); */
 
   background-size: cover;
   
