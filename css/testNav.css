@@ -371,20 +371,20 @@ main {
 /* ///////////This is different from testNav.css and Can cause issues//////// */
 
 
-#red-counter4 {
+/* #red-counter4 {
     border-radius:  40% 0 0 40%;
 }
 
 #green-counter4 {
     border-radius: 0 40% 40% 0;
-}
+} */
 
 #green div {
     display: inline-block;
     width: 25%;
     height:85%;
     margin-top: 2px;
-    background-image: linear-gradient(green, white, green);
+	background-image: linear-gradient(green, white, green);
 	float: left;
 }
 
@@ -485,8 +485,6 @@ th {
 td {
 	font-size: 25px;
 }
-
-/* #counterBox {} */
 
 #counterBox {
     display:inline-block;

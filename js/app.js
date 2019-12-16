@@ -88,13 +88,12 @@ function handleClick(event) {
   var clickButton = event.target.textContent;
   // console.log(clickButton);
   if (clickButton === answers[round]) {
-    renderAnswer();
     score++;
   } else {
-    answerBox.textContent = `${name} you are wrong!`;
     score--;
   }
   round++;
+  showRounds();
   renderQuestion();
   if (score === 0) {
     hide(redCounterFour);
@@ -169,8 +168,8 @@ function renderQuestion() {
   questionImage.src = picture[round];
 }
 
-function renderAnswer() {
-  answerBox.textContent = `${name} you are right!`;
+function showRounds() {
+  answerBox.textContent = `Mission ${round+1}`;
 }
 
 
@@ -205,6 +204,7 @@ getData();
 buttonOne.addEventListener('click', handleClick);
 buttonTwo.addEventListener('click', handleClick);
 renderQuestion();
+showRounds()
 hide(redCounterOne);
 hide(redCounterTwo);
 hide(redCounterThree);
