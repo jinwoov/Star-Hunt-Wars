@@ -16,17 +16,7 @@ var questionImage = document.getElementById('question-image');
 var round = 0;
 var score = 0;
 var name;
-var redBox = document.getElementById('red');
-var greenBox = document.getElementById('green');
 var handleBox = document.getElementById('counterBox')
-var redCounterOne = document.getElementById('red-counter1');
-var redCounterTwo = document.getElementById('red-counter2');
-var redCounterThree = document.getElementById('red-counter3');
-var redCounterFour = document.getElementById('red-counter4');
-var greenCounterOne = document.getElementById('green-counter1');
-var greenCounterTwo = document.getElementById('green-counter2');
-var greenCounterThree = document.getElementById('green-counter3');
-var greenCounterFour = document.getElementById('green-counter4');
 var highScore = document.getElementById('high-score');
 var userScore = document.getElementById('user-score');
 
@@ -99,63 +89,44 @@ function handleClick(event) {
     answerBox.style.color = '#fff';
     questionBox.style.color = '#fff';
     questionImage.style.boxShadow = 'none';
-    hide(redCounterFour);
-    hide(greenCounterFour);
   } else if (score === -1) {
     answerBox.style.color = '#FFCCCC';
     questionBox.style.color = '#FFCCCC';
     questionImage.style.boxShadow = '2px -2px 5px 5px #FFCCCC';
-    show(redCounterFour);
-    hide(redCounterThree);
   } else if (score === -2) {
     answerBox.style.color = '#FF7F7F';
     questionBox.style.color = '#FF7F7F';
     questionImage.style.boxShadow = '2px -2px 5px 5px #FF7F7F';
-    show(redCounterThree);
-    hide(redCounterTwo);
   } else if (score === -3) {
     answerBox.style.color = '#FF4C4C';
     questionBox.style.color = '#FF4C4C';
     questionImage.style.boxShadow = '2px -2px 5px 5px #FF4C4C';
-    show(redCounterTwo);
-    hide(redCounterOne);
   } else if (score <= -4) {
     answerBox.style.color = '#ff0000';
     questionBox.style.color = '#ff0000';
     questionImage.style.boxShadow = '2px -2px 5px 5px #ff0000';
-    show(redCounterOne);
   } else if (score === 1) {
     answerBox.style.color = '#e5f2e5';
     questionBox.style.color = '#e5f2e5';
     questionImage.style.boxShadow = '2px -2px 5px 5px #e5f2e5';
-    show(greenCounterFour);
-    hide(greenCounterTwo);
   } else if (score === 2) {
     answerBox.style.color = '#7fbf7f';
     questionBox.style.color = '#7fbf7f';
     questionImage.style.boxShadow = '2px -2px 5px 5px #7fbf7f';
-    show(greenCounterTwo);
-    hide(greenCounterThree);
   } else if (score === 3) {
     answerBox.style.color = '#329932';
     questionBox.style.color = '#329932';
     questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
-    show(greenCounterThree);
-    hide(greenCounterFour);
   } else if (score >= 4) {
     answerBox.style.color = '#008000';
     questionBox.style.color = '#008000';
     questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
-    show(greenCounterOne);
   }
 
   if (round === 10) {
     hide(questionBox);
     hide(buttonBox);
-    hide(redBox);
-    hide(greenBox);
     hide(questionImage);
-    hide(handleBox);
     hide(answerBox);
     new Storingscore(name, score);
     for (var i = 0; i < scoreStorage.length; i++) {
@@ -219,7 +190,7 @@ function getData() {
 
   var previousScore = localStorage.getItem('score');
   var parseScore = JSON.parse(previousScore);
-  console.log(previousScore)
+  // console.log(previousScore)
 
   if (parseScore !== null) {
     for (var i = 0; i < parseScore.length; i++) {
@@ -232,7 +203,7 @@ function getData() {
 function saveData() {
   var stringData = JSON.stringify(previousStorage);
   localStorage.setItem('score', stringData);
-  console.log(localStorage);
+  // console.log(localStorage);
 }
 
 // localStorage.setItem('name', enterName);
@@ -243,15 +214,7 @@ getData();
 buttonOne.addEventListener('click', handleClick);
 buttonTwo.addEventListener('click', handleClick);
 renderQuestion();
-showRounds()
-hide(redCounterOne);
-hide(redCounterTwo);
-hide(redCounterThree);
-hide(redCounterFour);
-hide(greenCounterOne);
-hide(greenCounterTwo);
-hide(greenCounterThree);
-hide(greenCounterFour);
+showRounds();
 // hide(linkButton);
 
 ////////////////////////////////////////////////////////////////
