@@ -36,11 +36,16 @@ Cait Rowland
 ![domainModel](./image/playhtmldomain.jpeg)
 
 
-#Resources 
+# Resources 
 Moving star background: 
 https://zcode.io/tutorials/creation-lightsaber-css-animation
 
 Lightsaber code was derived from: 
 https://codepen.io/GeoffreyCrofte/pen/jGgIo
+
+# GIF
+Baby Yoda: https://giphy.com/gifs/yoda-baby-babyyoda-Ken6Yg5n7bYStW4JYB
+  
+
 
 
