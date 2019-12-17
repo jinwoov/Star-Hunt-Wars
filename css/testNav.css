@@ -256,6 +256,7 @@ header {
 	display: table;
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 10px;
 }
 
 .topnav li {
@@ -434,7 +435,7 @@ main {
     margin: auto 0px;
     margin-right: 130px;
     width: 320px;
-    padding: 50px 0px;
+    padding: 50px 10px;
     border: 1px #FFE81F solid;
     display: inline-block;
     border-radius: 10px;
@@ -470,6 +471,7 @@ main {
 #high-score > h1 {
 	font-size: 50px;
 	margin-bottom: 20px;
+	font-family: 'Play', sans-serif;
 }
 
 table {
