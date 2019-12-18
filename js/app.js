@@ -215,7 +215,7 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("popupForm").style.display = "none";
-  }
+}
 
 // localStorage.setItem('name', enterName);
 ///////////////////////Calling all the function////////////////

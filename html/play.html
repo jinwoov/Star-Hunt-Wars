@@ -121,13 +121,15 @@
     <table id='user-score'></table>
 
     <!-- ///////////////new user button////////////////////// -->
-    <button class="newPlayerButton" onclick="openForm()">New Player</button>
+   <div class="newPlayerButton">
+    <button class="openNewPlayerFom" onclick="openForm()">New Player</button>
+    </div>
 
-    <div class="form-popup" id="myForm">
+    <div class="formPopup" id="myForm">
         <form action="../html/play.html" class="form-container">
       
           <label for="newUserName"><b>New Player Name: </b></label>
-          <input type="text" placeholder="Enter Your Name" name="newPlayer" required>
+          <input type="text" placeholder="Enter Your Name" name="newPlayer">
           <button type="submit" class="playGameBtn">Play Game</button>
           <button type="submit" class="cancelButton" onclick="closeForm()">Cancel</button>
         </form>
