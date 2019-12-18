@@ -169,6 +169,7 @@ function highScoreList() {
 }
 
 
+
 ///////////////////page rendering//////////////////////////
 
 function renderQuestion() {
@@ -204,6 +205,16 @@ function saveData() {
   var stringData = JSON.stringify(previousStorage);
   localStorage.setItem('score', stringData);
   // console.log(localStorage);
+}
+
+/////////// New User Button ////////////
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
 }
 
 // localStorage.setItem('name', enterName);
