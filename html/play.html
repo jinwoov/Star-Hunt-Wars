@@ -119,6 +119,19 @@
     <section id='high-score'>
     </section>
     <table id='user-score'></table>
+
+    <!-- ///////////////new user button////////////////////// -->
+    <button class="newPlayerButton" onclick="openForm()">New Player</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="../html/play.html" class="form-container">
+      
+          <label for="newUserName"><b>New Player Name: </b></label>
+          <input type="text" placeholder="Enter Your Name" name="newPlayer" required>
+          <button type="submit" class="playGameBtn">Play Game</button>
+          <button type="submit" class="cancelButton" onclick="closeForm()">Cancel</button>
+        </form>
+
     </main>
 
 
