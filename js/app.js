@@ -16,7 +16,7 @@ var questionImage = document.getElementById('question-image');
 var round = 0;
 var score = 0;
 var name;
-var handleBox = document.getElementById('counterBox')
+// var handleBox = document.getElementById('counterBox')
 var highScore = document.getElementById('high-score');
 var userScore = document.getElementById('user-score');
 
