@@ -348,6 +348,12 @@ main {
     border-radius: 15%;
 }
 
+/* letting the whole screen show the stars */
+
+#space {
+	height: 190%;
+}
+
 /* ///////////This is different from testNav.css and Can cause issues//////// */
 
 
@@ -497,4 +503,3 @@ td {
     padding-top: 20px;
     z-index: 15;
 } */
-
