@@ -1,11 +1,17 @@
 /* /////DUPLICATE - But its the same as style.css///// */
 
+* {
+	cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
+	/* End http://www.cursors-4u.com */
+}
+
 body {
 	width: 960px;
 	background-color: black;
 	color: white;
 	font-family: 'Orbitron', sans-serif;
 	margin: auto;
+	
 }
 
 /* Header */

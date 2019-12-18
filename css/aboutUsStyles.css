@@ -25,6 +25,8 @@ body {
   /* background-image: url(https://static.wixstatic.com/media/26b39c_a1c5069b3c734396ab35a5d0d949b336~mv2.gif); */
 
   background-size: cover;
+  cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
+  /* End http://www.cursors-4u.com */
   
 }
 
@@ -51,7 +53,7 @@ color: greenyellow;
   color: greenyellow;
   opacity: 0.80;
   border: grey solid 1px;
-  cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
+  /* cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important; */
   /* End http://www.cursors-4u.com */
   background: url(https://media.giphy.com/media/gderNQLBGaGEGwgGS5/source.gif) 0 0;
   /* background: url(https://media.giphy.com/media/11j5OF7BTglVkc/source.gif) 0 0; */
