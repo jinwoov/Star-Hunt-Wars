@@ -51,6 +51,8 @@
 
 button {
     background-color: goldenrod;
+    border: goldenrod;
+    border-radius: 12px;
     color: black;
     font-size: xx-large;
     width: 200px;
@@ -59,6 +61,8 @@ button {
 
 button:hover {
     background-color: rgb(175, 19, 5);
+    border: rgb(175, 19, 5);
+    border-radius: 12px;
     color: black;
     font-size: xx-large;
     width: 200px;
