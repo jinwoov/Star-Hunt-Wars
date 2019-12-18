@@ -4,7 +4,7 @@ body {
 	width: 960px;
 	background-color: black;
 	color: white;
-	font-family: 'Star Jedi', arial;
+	font-family: 'Orbitron', sans-serif;
 	margin: auto;
 }
 
@@ -391,7 +391,6 @@ main {
 #button-box {
 	margin: 50px 0;
 }
-
 
 #button-a {
     font-size: 20px;
