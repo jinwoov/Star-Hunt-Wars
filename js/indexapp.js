@@ -2,7 +2,7 @@
 var enterName = document.getElementById('name').value;
 var button = document.getElementById('button-container');
 
-  ////////////--Enoch--Adlib Input//////////
+////////////--Enoch--Adlib Input//////////
 var adlibQuestion1 = document.getElementById('adlibQuestionOne').value;
 var adlibQuestion2 = document.getElementById('adlibQuestionTwo').value;
 var adlibQuestion3 = document.getElementById('adlibQuestionThree').value;
@@ -15,9 +15,23 @@ function saveData () {
   localStorage.setItem('name', enterName);
 }
 
+////////////--Enoch--Adlib Input//////////
+function saveAdlibData () {
+  adlibQuestion1 = document.getElementById('adlibQuestionOne').value;
+  adlibQuestion2 = document.getElementById('adlibQuestionTwo').value;
+  adlibQuestion3 = document.getElementById('adlibQuestionThree').value;
+  adlibQuestion4 = document.getElementById('adlibQuestionFour').value;
+  localStorage.setItem('Question1', adlibQuestion1);
+  localStorage.setItem('Question2', adlibQuestion2);
+  localStorage.setItem('Question3', adlibQuestion3);
+  localStorage.setItem('Question4', adlibQuestion4);
+}
+
 
 function handleClick() {
   saveData();
+  ////////////--Enoch--Adlib Input//////////
+  saveAdlibData();
 }
 
 
