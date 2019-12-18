@@ -4,7 +4,7 @@ body {
 	width: 960px;
 	background-color: black;
 	color: white;
-	font-family: 'Star Jedi', arial;
+	font-family: 'Orbitron', sans-serif;
 	margin: auto;
 }
 
@@ -348,6 +348,12 @@ main {
     border-radius: 15%;
 }
 
+/* letting the whole screen show the stars */
+
+#space {
+	height: 190%;
+}
+
 /* ///////////This is different from testNav.css and Can cause issues//////// */
 
 
@@ -362,7 +368,7 @@ main {
 
 
 #question-box {
-    border: 1px #FFE81F solid;
+    border: 1px goldenrod solid;
     padding: 50px 100px;
 	font-size: 30px;
 	font-family: 'Play', sans-serif;
@@ -377,7 +383,7 @@ main {
 
 #answer {
 	font-size: 25px;
-	border: 1px solid #FFE81F;
+	border: 1px solid goldenrod;
 	padding: 10px 0;
 	font-family: 'Play', sans-serif;
 }
@@ -386,14 +392,13 @@ main {
 	margin: 50px 0;
 }
 
-
 #button-a {
     font-size: 20px;
     margin: auto 0px;
     margin-right: 130px;
     width: 320px;
     padding: 50px 10px;
-    border: 1px #FFE81F solid;
+    border: 1px goldenrod solid;
     display: inline-block;
     border-radius: 10px;
 	background-color: black;
@@ -403,7 +408,7 @@ main {
 
 #button-a:hover {
 	box-shadow: 2px -2px 5px 5px;
-	color: #FFE81F;
+	color: goldenrod;
 }
 
 #button-b {
@@ -412,7 +417,7 @@ main {
     margin-left: 130px;
     padding: 50px 0px;
     width: 320px;
-    border: 1px #FFE81F solid;
+    border: 1px goldenrod solid;
     display: inline-block;
 	border-radius: 10px;
 	background-color: black;
@@ -422,7 +427,7 @@ main {
 
 #button-b:hover {
 	box-shadow: 2px -2px 5px 5px;
-	color: #FFE81F;
+	color: goldenrod;
 }
 
 #high-score > h1 {
@@ -497,4 +502,3 @@ td {
     padding-top: 20px;
     z-index: 15;
 } */
-
