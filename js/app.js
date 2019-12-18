@@ -220,16 +220,12 @@ function newPlayerButtonHide() {
 function newPlayerButtonShow() {
   show(newBtn);
 }
-
-
-
 function openForm() {
   document.getElementById('myForm').style.display = "block";
+}   
+function closeForm() {
+  document.getElementsByClassName('myForm').style.display = "none";
 }
-
-// function closeForm() {
-//   document.getElementsByClassName('formPopUp').style.display = "none";
-// }
 
 // localStorage.setItem('name', enterName);
 ///////////////////////Calling all the function////////////////
