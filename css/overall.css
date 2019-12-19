@@ -313,6 +313,7 @@ footer {
 	border-top: goldenrod solid 2px;
 	text-align: center;
 	margin-top: 30px;
+	padding-top: 10px;
 }
 
 .broilerPlate {
@@ -321,6 +322,7 @@ footer {
 	font-size: 8pt;
 	color: grey;
 	padding-bottom: 10px;
+	padding-top: 15px;
 }
 
 canvas {
