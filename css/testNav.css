@@ -513,7 +513,6 @@ td {
 /* /////// Pop Up Form for New User ///////// */
 
 		.newPlayerButton {
-
 		color: white;
 		padding: 12px 20px;
 		border: none;
@@ -533,13 +532,13 @@ td {
 		z-index: 9;
 		}
 		/* Styles for the form container */
-		.form-container {
+		.formCont {
 		max-width: 300px;
 		padding: 20px;
 		background-color: black;
 		}
 		/* Full-width for input fields */
-		.form-container input[type=text] {
+		.formCont input[type=text] {
 		width: 80%;
 		padding: 10px;
 		margin: 5px 0 22px 0;
@@ -547,8 +546,8 @@ td {
 		background: #eee;
 		}
 
-		/* Style submit/login button */
-		.form-container .playGameBtn {
+		/* Style submit/play game button */
+		.formCont .playGameBtn {
 		background-color: #00FF00;
 		color: black;
 		padding: 12px 20px;
@@ -557,7 +556,7 @@ td {
 		margin-bottom:10px;
 		}
 		/* Style cancel button */
-		.form-container .cancelButton {
+		.formCont .cancelButton {
 		background-color: #F00;
 		color: white;
 		padding: 12px 20px;
@@ -566,8 +565,4 @@ td {
 		margin-bottom: 10px;
 
 		}
-		/* Hover effects for buttons */
-		/* .form-container .btn:hover, .open-button:hover {
-		opacity: 1;
-		} */
 

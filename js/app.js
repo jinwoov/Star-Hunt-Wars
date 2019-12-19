@@ -10,7 +10,7 @@ var previousStorage = [];
 var questionBox = document.getElementById('question-box');
 var buttonOne = document.getElementById('button-a');
 var buttonTwo = document.getElementById('button-b');
-var buttonBox = document.getElementById('button-box')
+var buttonBox = document.getElementById('button-box');
 var answerBox = document.getElementById('answer');
 var questionImage = document.getElementById('question-image');
 var round = 0;
@@ -134,6 +134,7 @@ function handleClick(event) {
     }
     highScoreList();
     saveData();
+    newPlayerButtonShow();
   }
 }
 
@@ -199,8 +200,7 @@ function getData() {
     }
   }
   // if (parseScore !== null) {
-}
-
+} 
 function saveData() {
   var stringData = JSON.stringify(previousStorage);
   localStorage.setItem('score', stringData);
@@ -208,18 +208,39 @@ function saveData() {
 }
 
 /////////// New User Button ////////////
+var newBtn = document.getElementById('newPlayerButton');
+var newUserName = document.getElementById('newPlayer');
 
+function newPlayerButtonHide() {
+
+  if (round < 10) {
+    hide(newBtn);
+  }
+}
+
+function newPlayerButtonShow() {
+  show(newBtn);
+}
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
+  document.getElementById('myForm').style.display = 'block';
+}
+// function closeForm() {
+//   document.getElementsById('myForm').style.display = 'none';
+// }
+
+function saveNewUser (){
+  newUserName = document.getElementById('newPlayer').value;
+  localStorage.setItem('name', newUserName);
 }
 
-function closeForm() {
-  document.getElementById("popupForm").style.display = "none";
+function handleNewUserClick() {
+  saveNewUser();
 }
+newBtn.addEventListener('click', handleNewUserClick);
 
 // localStorage.setItem('name', enterName);
 ///////////////////////Calling all the function////////////////
-
+newPlayerButtonHide();
 instantiate();
 getData();
 buttonOne.addEventListener('click', handleClick);
@@ -229,3 +250,4 @@ showRounds();
 // hide(linkButton);
 
 ////////////////////////////////////////////////////////////////
+
