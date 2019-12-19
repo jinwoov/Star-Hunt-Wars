@@ -200,7 +200,7 @@ function getData() {
     }
   }
   // if (parseScore !== null) {
-} 
+}
 function saveData() {
   var stringData = JSON.stringify(previousStorage);
   localStorage.setItem('score', stringData);
