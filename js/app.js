@@ -19,6 +19,7 @@ var name;
 // var handleBox = document.getElementById('counterBox')
 var highScore = document.getElementById('high-score');
 var userScore = document.getElementById('user-score');
+var hLight = document.getElementById('h-light');
 
 //////////////////////////constructor//////////////////////////
 
@@ -93,41 +94,35 @@ function handleClick(event) {
   showRounds();
   renderQuestion();
   if (score === 0) {
-    answerBox.style.color = '#fff';
-    questionBox.style.color = '#fff';
-    questionImage.style.boxShadow = 'none';
+    hLight.style.boxShadow = '0 0 5px rgb(70, 112, 248),0 0 8px rgb(70, 112, 248),0 0 12px rgb(70, 112, 248),0 0 15px blue,0 0 25px blue;';
   } else if (score === -1) {
-    answerBox.style.color = '#FFCCCC';
-    questionBox.style.color = '#FFCCCC';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FFCCCC';
+    hLight.style.boxShadow = '0 0 5px #ffcccc,0 0 8px #ffcccc,0 0 12px #ffcccc,0 0 15px #ffcccc,0 0 25px #ffcccc';
   } else if (score === -2) {
-    answerBox.style.color = '#FF7F7F';
-    questionBox.style.color = '#FF7F7F';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FF7F7F';
+    hLight.style.boxShadow = '0 0 5px #ff9999,0 0 8px #ff9999,0 0 12px #ff9999,0 0 15px #ff9999,0 0 25px #ff9999';
   } else if (score === -3) {
-    answerBox.style.color = '#FF4C4C';
-    questionBox.style.color = '#FF4C4C';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FF4C4C';
-  } else if (score <= -4) {
-    answerBox.style.color = '#ff0000';
-    questionBox.style.color = '#ff0000';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #ff0000';
+    hLight.style.boxShadow = '0 0 5px #ff6666,0 0 8px #ff6666,0 0 12px #ff6666,0 0 15px #ff6666,0 0 25px #ff6666';
+  } else if (score === -4) {
+    hLight.style.boxShadow = '0 0 5px #ff3232,0 0 8px #ff3232,0 0 12px #ff3232,0 0 15px #ff3232,0 0 25px #ff3232';
+  } else if (score === -5) {
+    hLight.style.boxShadow = '0 0 5px #ff1919,0 0 8px #ff1919,0 0 12px #ff1919,0 0 15px #ff1919,0 0 25px #ff1919';
+  } else if (score === -6) {
+    hLight.style.boxShadow = '0 0 5px #ff0000,0 0 8px #ff0000,0 0 12px #ff0000,0 0 15px #ff0000,0 0 25px #ff0000';
+  } else if (score <= -7) {
+    hLight.style.boxShadow = '0 0 5px #cc0000,0 0 8px #cc0000,0 0 12px #cc0000,0 0 15px #cc0000,0 0 25px #cc0000';
   } else if (score === 1) {
-    answerBox.style.color = '#e5f2e5';
-    questionBox.style.color = '#e5f2e5';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #e5f2e5';
+    hLight.style.boxShadow = '0 0 5px #cce5cc,0 0 8px #cce5cc,0 0 12px #cce5cc,0 0 15px #cce5cc,0 0 25px #cce5cc';
   } else if (score === 2) {
-    answerBox.style.color = '#7fbf7f';
-    questionBox.style.color = '#7fbf7f';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #7fbf7f';
+    hLight.style.boxShadow = '0 0 5px #99cc99,0 0 8px #99cc99,0 0 12px #99cc99,0 0 15px #99cc99,0 0 25px #99cc99';
   } else if (score === 3) {
-    answerBox.style.color = '#329932';
-    questionBox.style.color = '#329932';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
-  } else if (score >= 4) {
-    answerBox.style.color = '#008000';
-    questionBox.style.color = '#008000';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
+    hLight.style.boxShadow = '0 0 5px #66b266,0 0 8px #66b266,0 0 12px #66b266,0 0 15px #66b266,0 0 25px #66b266';
+  } else if (score === 4) {
+    hLight.style.boxShadow = '0 0 5px #329932,0 0 8px #329932,0 0 12px #329932,0 0 15px #329932,0 0 25px #329932';
+  } else if (score === 5) {
+    hLight.style.boxShadow = '0 0 5px #198c19,0 0 8px #198c19,0 0 12px #198c19,0 0 15px #198c19,0 0 25px #198c19';
+  } else if (score === 6) {
+    hLight.style.boxShadow = '0 0 5px #008000,0 0 8px #008000,0 0 12px #008000,0 0 15px #008000,0 0 25px #008000';
+  } else if (score => 7) {
+    hLight.style.boxShadow = '0 0 5px #007300,0 0 8px #007300,0 0 12px #007300,0 0 15px #007300,0 0 25px #007300';
   }
 
   if (round === 10) {
