@@ -513,7 +513,6 @@ td {
 /* /////// Pop Up Form for New User ///////// */
 
 		.newPlayerButton {
-
 		color: white;
 		padding: 12px 20px;
 		border: none;
@@ -547,7 +546,7 @@ td {
 		background: #eee;
 		}
 
-		/* Style submit/login button */
+		/* Style submit/play game button */
 		.formCont .playGameBtn {
 		background-color: #00FF00;
 		color: black;
@@ -566,8 +565,4 @@ td {
 		margin-bottom: 10px;
 
 		}
-		/* Hover effects for buttons */
-		/* .form-container .btn:hover, .open-button:hover {
-		opacity: 1;
-		} */
 

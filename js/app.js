@@ -209,6 +209,7 @@ function saveData() {
 
 /////////// New User Button ////////////
 var newBtn = document.getElementById('newPlayerButton');
+var newUserName = document.getElementById('newPlayer');
 
 function newPlayerButtonHide() {
 
@@ -221,11 +222,21 @@ function newPlayerButtonShow() {
   show(newBtn);
 }
 function openForm() {
-  document.getElementById('myForm').style.display = "block";
-}   
-function closeForm() {
-  document.getElementsByClassName('myForm').style.display = "none";
+  document.getElementById('myForm').style.display = 'block';
 }
+// function closeForm() {
+//   document.getElementsById('myForm').style.display = 'none';
+// }
+
+function saveNewUser (){
+  newUserName = document.getElementById('newPlayer').value;
+  localStorage.setItem('name', newUserName);
+}
+
+function handleNewUserClick() {
+  saveNewUser();
+}
+newBtn.addEventListener('click', handleNewUserClick);
 
 // localStorage.setItem('name', enterName);
 ///////////////////////Calling all the function////////////////
