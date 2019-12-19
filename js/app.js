@@ -71,10 +71,17 @@ function instantiate() {
   new Strings('You and your escort enter the room where the representatives from the Empire are waiting. An old general sits at a table and a young scientists stands next to you. The guards that escorted you continue to surround you, their guns at the ready. The general asks to see the cargo. You refuse, telling him you need to see your reward first. Laughing, the general orders a soldier to pull a large crate over on a cart. The soldier opens to the lid to the crate to reveal more Meskar than you’ve ever seen at once before. There is more than enough to make new armour for your entire Tantalorian clan. You open the bag and take the child out. He looks at you with large, unblinking, sad eyes.', 'With resolve, you hand the child over and take the Meskar. As you leave the room, you hear the child cry out. Once you’ve left the building, you hear loud crashes, blasters go off, shouting, then silence. It sounds like the Empire got more than they bargained for. You smirk as you turn to head towards your ship. Before you’re able to take another step, you feel a small tug on your leg. Looks like you’re stuck babysitting yet again.', 'You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist. Once the room is still, you gently place the child on top of the crate of Meskar. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar before heading to your ship to further travel the galaxy.', 'You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist. Once the room is still, you gently place the child on top of the crate of Meskar. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar before heading to your ship to further travel the galaxy.', '');
 }
 
-////////////////////Clicking//////////////////////
+///////Adding Sounds to Event Listener////////
+function myPlay(){
+  var audio = new Audio("../sounds/lightsaber-on-sound.mp3");
+  audio.play();
+}
+
+///////////////////Clicking//////////////////////
 
 function handleClick(event) {
   event.preventDefault();
+  myPlay();
   var clickButton = event.target.textContent;
   // console.log(clickButton);
   if (clickButton === answers[round]) {
