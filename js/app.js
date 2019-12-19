@@ -19,6 +19,7 @@ var name;
 // var handleBox = document.getElementById('counterBox')
 var highScore = document.getElementById('high-score');
 var userScore = document.getElementById('user-score');
+var hLight = document.getElementById('h-light');
 
 //////////////////////////constructor//////////////////////////
 
@@ -71,10 +72,17 @@ function instantiate() {
   new Strings('You and your escort enter the room where the representatives from the Empire are waiting. An old general sits at a table and a young scientists stands next to you. The guards that escorted you continue to surround you, their guns at the ready. The general asks to see the cargo. You refuse, telling him you need to see your reward first. Laughing, the general orders a soldier to pull a large crate over on a cart. The soldier opens to the lid to the crate to reveal more Meskar than you’ve ever seen at once before. There is more than enough to make new armour for your entire Tantalorian clan. You open the bag and take the child out. He looks at you with large, unblinking, sad eyes.', 'With resolve, you hand the child over and take the Meskar. As you leave the room, you hear the child cry out. Once you’ve left the building, you hear loud crashes, blasters go off, shouting, then silence. It sounds like the Empire got more than they bargained for. You smirk as you turn to head towards your ship. Before you’re able to take another step, you feel a small tug on your leg. Looks like you’re stuck babysitting yet again.', 'You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist. Once the room is still, you gently place the child on top of the crate of Meskar. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar before heading to your ship to further travel the galaxy.', 'You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist. Once the room is still, you gently place the child on top of the crate of Meskar. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar before heading to your ship to further travel the galaxy.', '');
 }
 
+///////Adding Sounds to Event Listener////////
+function myPlay(){
+  var audio = new Audio("../sounds/lightsaber-on-sound.mp3");
+  audio.play();
+}
+
 ////////////////////Clicking//////////////////////
 
 function handleClick(event) {
   event.preventDefault();
+  myPlay();
   var clickButton = event.target.textContent;
   // console.log(clickButton);
   if (clickButton === answers[round]) {
@@ -86,41 +94,35 @@ function handleClick(event) {
   showRounds();
   renderQuestion();
   if (score === 0) {
-    answerBox.style.color = '#fff';
-    questionBox.style.color = '#fff';
-    questionImage.style.boxShadow = 'none';
+    hLight.style.boxShadow = '0 0 5px rgb(70, 112, 248),0 0 8px rgb(70, 112, 248),0 0 12px rgb(70, 112, 248),0 0 15px blue,0 0 25px blue;';
   } else if (score === -1) {
-    answerBox.style.color = '#FFCCCC';
-    questionBox.style.color = '#FFCCCC';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FFCCCC';
+    hLight.style.boxShadow = '0 0 5px #ffcccc,0 0 8px #ffcccc,0 0 12px #ffcccc,0 0 15px #ffcccc,0 0 25px #ffcccc';
   } else if (score === -2) {
-    answerBox.style.color = '#FF7F7F';
-    questionBox.style.color = '#FF7F7F';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FF7F7F';
+    hLight.style.boxShadow = '0 0 5px #ff9999,0 0 8px #ff9999,0 0 12px #ff9999,0 0 15px #ff9999,0 0 25px #ff9999';
   } else if (score === -3) {
-    answerBox.style.color = '#FF4C4C';
-    questionBox.style.color = '#FF4C4C';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #FF4C4C';
-  } else if (score <= -4) {
-    answerBox.style.color = '#ff0000';
-    questionBox.style.color = '#ff0000';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #ff0000';
+    hLight.style.boxShadow = '0 0 5px #ff6666,0 0 8px #ff6666,0 0 12px #ff6666,0 0 15px #ff6666,0 0 25px #ff6666';
+  } else if (score === -4) {
+    hLight.style.boxShadow = '0 0 5px #ff3232,0 0 8px #ff3232,0 0 12px #ff3232,0 0 15px #ff3232,0 0 25px #ff3232';
+  } else if (score === -5) {
+    hLight.style.boxShadow = '0 0 5px #ff1919,0 0 8px #ff1919,0 0 12px #ff1919,0 0 15px #ff1919,0 0 25px #ff1919';
+  } else if (score === -6) {
+    hLight.style.boxShadow = '0 0 5px #ff0000,0 0 8px #ff0000,0 0 12px #ff0000,0 0 15px #ff0000,0 0 25px #ff0000';
+  } else if (score <= -7) {
+    hLight.style.boxShadow = '0 0 5px #cc0000,0 0 8px #cc0000,0 0 12px #cc0000,0 0 15px #cc0000,0 0 25px #cc0000';
   } else if (score === 1) {
-    answerBox.style.color = '#e5f2e5';
-    questionBox.style.color = '#e5f2e5';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #e5f2e5';
+    hLight.style.boxShadow = '0 0 5px #cce5cc,0 0 8px #cce5cc,0 0 12px #cce5cc,0 0 15px #cce5cc,0 0 25px #cce5cc';
   } else if (score === 2) {
-    answerBox.style.color = '#7fbf7f';
-    questionBox.style.color = '#7fbf7f';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #7fbf7f';
+    hLight.style.boxShadow = '0 0 5px #99cc99,0 0 8px #99cc99,0 0 12px #99cc99,0 0 15px #99cc99,0 0 25px #99cc99';
   } else if (score === 3) {
-    answerBox.style.color = '#329932';
-    questionBox.style.color = '#329932';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
-  } else if (score >= 4) {
-    answerBox.style.color = '#008000';
-    questionBox.style.color = '#008000';
-    questionImage.style.boxShadow = '2px -2px 5px 5px #329932';
+    hLight.style.boxShadow = '0 0 5px #66b266,0 0 8px #66b266,0 0 12px #66b266,0 0 15px #66b266,0 0 25px #66b266';
+  } else if (score === 4) {
+    hLight.style.boxShadow = '0 0 5px #329932,0 0 8px #329932,0 0 12px #329932,0 0 15px #329932,0 0 25px #329932';
+  } else if (score === 5) {
+    hLight.style.boxShadow = '0 0 5px #198c19,0 0 8px #198c19,0 0 12px #198c19,0 0 15px #198c19,0 0 25px #198c19';
+  } else if (score === 6) {
+    hLight.style.boxShadow = '0 0 5px #008000,0 0 8px #008000,0 0 12px #008000,0 0 15px #008000,0 0 25px #008000';
+  } else if (score => 7) {
+    hLight.style.boxShadow = '0 0 5px #007300,0 0 8px #007300,0 0 12px #007300,0 0 15px #007300,0 0 25px #007300';
   }
 
   if (round === 10) {
