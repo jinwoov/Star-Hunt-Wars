@@ -12,6 +12,10 @@ body {
   
 }
 
+img {
+  width:90%;
+}
+
 .aboutUsDescriptionText{
 color: greenyellow;
 
