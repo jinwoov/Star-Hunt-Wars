@@ -212,7 +212,7 @@ function highScoreList() {
       tdEl.style.color = 'greenyellow';
       tdEle.style.color = 'greenyellow';
     } else if (scoreStorage[i].score === 0){
-      tdEle.textContent = 'Mandalorian';
+      tdEle.textContent = 'Tantalorian';
     }
     trEl.appendChild(tdEl);
     trEl.appendChild(tdEle);
