@@ -283,9 +283,9 @@ function newPlayerButtonShow() {
 function openForm() {
   document.getElementById('myForm').style.display = 'block';
 }
-// function closeForm() {
-//   document.getElementsById('myForm').style.display = 'none';
-// }
+function closeForm() {
+  document.getElementById('myForm').style.display = 'none';
+}
 
 function saveNewUser (){
   newUserName = document.getElementById('newPlayer').value;

@@ -513,7 +513,12 @@ td {
 
 /* /////// Pop Up Form for New User ///////// */
 
+		/* #newPlayerButton {
+			position: absolute;
+		} */
+
 		.newPlayerButton {
+		position: absolute;
 		color: white;
 		padding: 12px 20px;
 		border: none;
@@ -558,7 +563,7 @@ td {
 		margin-bottom:10px;
 		}
 		/* Style cancel button */
-		.formCont .cancelButton {
+		.formCont #cancelButton {
 		background-color: #F00;
 		color: white;
 		padding: 12px 20px;
