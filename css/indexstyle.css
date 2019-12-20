@@ -5,6 +5,39 @@
     color: goldenrod;
 } */
 
+#instructions-user{
+  border: 2px goldenrod solid;
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+}
+
+#button-instruction:hover {
+  background-color: white;
+}
+#button-script:hover {
+  background-color: white;
+}
+
+#button-instruction {
+  background-color: green;
+  font-family: monospace;
+  margin-bottom: 20px;
+  border-radius: 0;
+  font-size: 12px;
+  width: 100px;
+  height: 50px;
+}
+
+#button-script {
+  background-color: red;
+  font-family: monospace;
+  border-radius: 0;
+  font-size: 12px;
+  width:100px;
+  height:50px;
+
+}
 
 #instruction-container {
     width: 85%;

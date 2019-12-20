@@ -69,6 +69,7 @@ function show(elem) {
 ///////////////////////instantiate////////////////////
 
 function instantiate() {
+
   new Strings(`You look out of the window of your cockpit, the deep darkness of space flecked with bright stars as far as you can see. You, ${playersName} are a Tantalorian bounty hunter, from ${playerPlanetQ1} with a hard-earned reputation for efficiency and consistency in capturing your ${playerSillyAnimalQ4} targets. Behind you, you hear the clink of metal against metal and turn around. Your most recent target, a smuggler, who farms ${playerSillyAnimalQ4}'s, is handcuffed to the seat behind you and is starting to regain consciousness. As he comes to awareness, he offers to double the bounty on his head if you let him go.`,
   `You accept his offer and take his money before shoving him into an escape pod, take a(n) ${playerWeaknessQ3} break, eject it into the deep darkness of space, and leave him to fend for himself.`, 
   `You stay silent and uncuff the smuggler and lead him below deck where you freeze him in Carbonite, and cook the ${playerSillyAnimalQ4}s from earlier, for nourishment.`, 
@@ -125,6 +126,7 @@ function instantiate() {
   `With resolve, you hand the child over and take the Meskar mixed with ${playerSillyAnimalQ4}. As you leave the room, you hear the child cry out. Once you’ve left the building, you hear loud crashes, blasters go off, ${playerWeaknessQ3},shouting, then silence. It sounds like the Empire got more than they bargained for. You smirk as you turn to head towards your ship. Before you’re able to take another step, you feel a small tug on your leg. Looks like you’re stuck babysitting yet again.`,
   `You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist using your ${playerPowerQ2} ability. Once the room is still, you gently place the child on top of the crate of Meskar mixed with ${playerSillyAnimalQ4}. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar mixed with ${playerSillyAnimalQ4} before heading to your ship to further travel the galaxy and to your home planet, ${playerPlanetQ1}.`,
   `You nod to the child and the child uses the force to throw the soldiers and guards against the wall. With the child tucked under one arm and your blaster in the other, you make short work of the soldiers, the guards, the general, and the scientist using your ${playerPowerQ2} ability. Once the room is still, you gently place the child on top of the crate of Meskar mixed with ${playerSillyAnimalQ4}. You and the child then leave the building and head toward the Tantalorian smith to make a sizeable donation of Meskar mixed with ${playerSillyAnimalQ4} before heading to your ship to further travel the galaxy and to your home planet, ${playerPlanetQ1}.`, '');
+
 }
 
 ///////Adding Sounds to Event Listener////////
