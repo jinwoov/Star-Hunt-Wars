@@ -1,13 +1,13 @@
 # Star-Hunt-Wars
-Project consists on Star Wars trilogy theme specifically the Mandalorian bounty hunter
+Project consists on Star Wars trilogy theme specifically the Mandalorian bounty hunter  
 # Team Members 
-Jin Woo Kim 
-Enoch Strok 
-Beth Hansen 
-Cait Rowland 
+Jin Woo Kim   
+Enoch Strok  
+Beth Hansen  
+Cait Rowland  
 # How to Run this Game
-Deployed Website: https://201-project-group-4.github.io/Star-Hunt-Wars/index.html 
-Run terminal and open `live-server` from head repo or open deployed website.
+Deployed Website: https://201-project-group-4.github.io/Star-Hunt-Wars/index.html  
+Run terminal and open `live-server` from head repo or open deployed website.  
 # User Stories
 - As a user I would like a game, so that I am entertained
 - As a user, I would like this game to be Star Wars themed, so that I can be involved in the Star Wars world
@@ -39,14 +39,14 @@ To create an application that will solve boredom in everyday life. Mix between S
 # Domain Model
 ![domainModel](./image/playhtmldomain.jpeg)
 # Resources
-Draw io to create wire-frame and domain model
-https://www.draw.io
-Moving star background:
-https://zcode.io/tutorials/creation-lightsaber-css-animation
-Lightsaber code was derived from:
-https://codepen.io/GeoffreyCrofte/pen/jGgIo
-Star Wars BGM in the index.html:
-https://www.youtube.com/watch?v=VeFzYPKbz1g
+Draw io to create wire-frame and domain model:  
+https://www.draw.io  
+Moving star background:  
+https://zcode.io/tutorials/creation-lightsaber-css-animation  
+Lightsaber code was derived from:  
+https://codepen.io/GeoffreyCrofte/pen/jGgIo  
+Star Wars BGM in the index.html:  
+https://www.youtube.com/watch?v=VeFzYPKbz1g  
 # GIF
 Baby Yoda: https://giphy.com/gifs/yoda-baby-babyyoda-Ken6Yg5n7bYStW4JYB  
 Baby Yoda on question 3: https://giphy.com/gifs/star-wars-yoda-baby-ZFi2wFRs3lBvYNglWk  
