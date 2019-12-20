@@ -368,17 +368,6 @@ main {
 
 /* ///////////This is different from testNav.css and Can cause issues//////// */
 
-
-/* #red-counter4 {
-    background-color: gray;
-}
-
-#green-counter4 {
-    border-radius: 0 40% 40% 0;
-}  */
-
-
-
 #question-box {
     border: 1px goldenrod solid;
     padding: 50px 100px;
@@ -423,12 +412,9 @@ main {
 #button-b {
 	font-size: 25px;
 	margin-top:20px;
-    /* margin: auto 0px; */
-    /* margin-left: 130px; */
     padding: 20px 5px;
     width: 100%;
     border: 1px goldenrod solid;
-    /* display: inline-block; */
 	border-radius: 10px;
 	background-color: black;
 	color: white;
@@ -466,9 +452,7 @@ td {
 
 #counterBox {
     display:inline-block;
-    /* left:45%; */
     width:45px;
-    /* background-color: gray; */
     height:28px;
     vertical-align: center;
     background-image: radial-gradient( red 40%, gray 50%);
@@ -478,48 +462,7 @@ td {
 	border-right: 5px black solid;
 }
 
-/* From test nav  */
-
-/* body {
-    width: 960px;
-    background-color: black;
-    color: white;
-    font-family: 'Star Jedi', arial;
-    margin: auto;
-
-} */
-
-/* Header */
-
-/* header {
-    width: 100%;
-    margin: 0 auto;
-} */
-
-/* .logo { */
-    /* position: relative; */
-    /* display: inline-flex; */
-    /* margin: auto; */
-    /* padding-left: 27%; */
-/* }
-
-/* Star Hung Wars Logo */
-
-/* .starHuntLogo {
-    display: block;
-    position: relative;
-    width: 350px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    z-index: 15;
-} */
-
-
 /* /////// Pop Up Form for New User ///////// */
-
-		/* #newPlayerButton {
-			position: absolute;
-		} */
 
 		.newPlayerButton {
 		position: absolute;
