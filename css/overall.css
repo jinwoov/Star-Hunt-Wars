@@ -54,6 +54,10 @@ header {
 	display: inline-block;
 }
 
+span.light {
+	height:200px;
+}
+
 #light {
 	width: 14px;
 	background: #F00;
@@ -572,10 +576,6 @@ td {
 		margin-bottom: 10px;
 
 		}
-
-		/*
-			 * == lightsaber Styles
-			 */
 			 
 			 #h-lightsaber {
 				width:50px;

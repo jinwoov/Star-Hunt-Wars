@@ -1,44 +1,25 @@
-/* #backgroundGif{
-  width: 100%;
-  height: 100%;
-  float: left;
-  position: absolute;
-} */
-
-
 body {
   width: 960px;
   margin: 0 auto;
   margin-top: 50px;
-  /* background-image: url("/image/AboutUsImages/sw18.jpg"); */
   background-color: black;
   opacity: 0.95;
   background-attachment: fixed;
   font-family: 'Star Jedi', arial;
   color: black;
-  /* background-image: url(https://media.giphy.com/media/xT9IgN8YKRhByRBzMI/source.gif); */
-  /* background-image: url(https://media.giphy.com/media/3og0IV7MOCfnm85iRa/source.gif); */
-  /* background-image: url(https://media.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif); */
-  /* Endless Warp Cockpit Shakey */
-  /* background-image: url(https://media.giphy.com/media/3owvKgRjmrtgJikO7C/source.gif); */
-  /* background-image: url(https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/source.gif); */
-  /* background-image: url(https://static.wixstatic.com/media/26b39c_a1c5069b3c734396ab35a5d0d949b336~mv2.gif); */
-
   background-size: cover;
 
   
 }
 
-
-/* #ProfileSection {
-   width: 960px;
-  margin: 0 auto;
-  margin-top: 300px;
-} */
-
 .aboutUsDescriptionText{
 color: greenyellow;
 
+}
+
+#ProfileSection {
+  margin: auto;
+  text-align: center;
 }
 
 .card {
@@ -46,20 +27,15 @@ color: greenyellow;
   max-width: 210px;
   height: 800px;
   margin: 10px;
+  margin-top: 55px;
   text-align: center;
   float: left;
   background: black;
   color: greenyellow;
   opacity: 0.80;
   border: grey solid 1px;
-  /* cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important; */
-  /* End http://www.cursors-4u.com */
-  background: url(https://media.giphy.com/media/gderNQLBGaGEGwgGS5/source.gif) 0 0;
-  /* background: url(https://media.giphy.com/media/11j5OF7BTglVkc/source.gif) 0 0; */
   box-shadow: 4px 4px black;
   background-size: 100% 100%;
-  background
-
 }
 
 .title {
@@ -90,7 +66,4 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
-  /* position: absolute; */
-  /* bottom: 0; */
-  
 }

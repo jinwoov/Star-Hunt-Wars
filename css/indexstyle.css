@@ -1,15 +1,12 @@
-/* body {
-    width: 960px;
-    margin: auto;
-    background-color: black;
-    color: goldenrod;
-} */
-
 #instructions-user{
   border: 2px goldenrod solid;
   padding: 20px;
   margin: 20px;
   font-size: 30px;
+}
+
+#buttonns {
+  z-index: 10;
 }
 
 #button-instruction:hover {
