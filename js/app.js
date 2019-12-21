@@ -139,6 +139,7 @@ function handleClick(event) {
   } else {
     score--;
   }
+  console.log(score);
   round++;
   showRounds();
   renderQuestion();
