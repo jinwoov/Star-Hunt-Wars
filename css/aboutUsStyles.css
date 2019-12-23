@@ -14,34 +14,49 @@ body {
 
 .aboutUsDescriptionText{
 color: greenyellow;
+margin-bottom: 20px;
 
 }
 
 #ProfileSection {
-  margin: auto;
+  margin-left: 15px;
   text-align: center;
+  height: 900px;
+
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 210px;
-  height: 800px;
+  height: 90%;
   margin: 10px;
   margin-top: 55px;
   text-align: center;
-  float: left;
+  display: inline-block;
   background: black;
   color: greenyellow;
   opacity: 0.80;
   border: grey solid 1px;
   box-shadow: 4px 4px black;
   background-size: 100% 100%;
+  vertical-align: center;
+  float: left;
 }
 
 .title {
   color: grey;
   font-size: 18px;
-  font-family: 'Star Jedi', arial;
+}
+
+img {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+#linkedin {
+  width: 30px;
+  background-color: black;
+  bottom: 0%;
 }
 
 button {
@@ -59,11 +74,15 @@ button {
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   color: black;
 
 }
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+p {
+  max-height: 800px;
 }
