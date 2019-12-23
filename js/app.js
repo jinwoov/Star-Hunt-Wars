@@ -46,7 +46,7 @@ function Storingscore(name, score) {
   this.name = name;
   this.score = score;
 
-  scoreStorage.push(this);
+  scoreStorage.unshift(this);
 }
 
 /////////////////////////////////////////////////////
@@ -143,7 +143,7 @@ function handleClick(event) {
   showRounds();
   renderQuestion();
   if (score === 0) {
-    hLight.style.boxShadow = '0 0 5px rgb(70, 112, 248),0 0 8px rgb(70, 112, 248),0 0 12px rgb(70, 112, 248),0 0 15px blue,0 0 25px blue;';
+    hLight.style.boxShadow = '0 0 5px #4670F8,0 0 8px #4670F8,0 0 12px #4670F8,0 0 15px #4670F8,0 0 25px #4670F8;';
   } else if (score === -1) {
     hLight.style.boxShadow = '0 0 5px #ffcccc,0 0 8px #ffcccc,0 0 12px #ffcccc,0 0 15px #ffcccc,0 0 25px #ffcccc';
   } else if (score === -2) {
@@ -179,10 +179,10 @@ function handleClick(event) {
     hide(buttonBox);
     hide(questionImage);
     hide(answerBox);
-    new Storingscore(name, score);
     for (var i = 0; i < scoreStorage.length; i++) {
       previousStorage.push(scoreStorage[i]);
     }
+    new Storingscore(name, score);
     highScoreList();
     saveData();
     newPlayerButtonShow();
@@ -195,7 +195,7 @@ function highScoreList() {
   var h1El = document.createElement('h1')
   h1El.textContent = 'High Score';
   highScore.appendChild(h1El)
-  for (var i = 0; i < scoreStorage.length; i++) {
+  for (var i = 0; i < 7; i++) {
     var trEl = document.createElement('tr');
     var thEl = document.createElement('th');
     thEl.textContent = scoreStorage[i].name;
@@ -257,6 +257,10 @@ function saveData() {
 /////////// New User Button ////////////
 var newBtn = document.getElementById('newPlayerButton');
 var newUserName = document.getElementById('newPlayer');
+var adlib1 = document.getElementById('adlib1')
+var adlib2 = document.getElementById('adlib2')
+var adlib3 = document.getElementById('adlib3')
+var adlib4 = document.getElementById('adlib4')
 
 function newPlayerButtonHide() {
 
@@ -277,12 +281,22 @@ function closeForm() {
 
 function saveNewUser (){
   newUserName = document.getElementById('newPlayer').value;
+  adlib1 = document.getElementById('adlib1').value;
+  adlib2 = document.getElementById('adlib2').value;
+  adlib3 = document.getElementById('adlib3').value;
+  adlib4 = document.getElementById('adlib4').value;
   localStorage.setItem('name', newUserName);
+  localStorage.setItem('Question1', adlib1);
+  localStorage.setItem('Question2', adlib2);
+  localStorage.setItem('Question3', adlib3);
+  localStorage.setItem('Question4', adlib4);
 }
 
 function handleNewUserClick() {
   saveNewUser();
 }
+
+
 newBtn.addEventListener('click', handleNewUserClick);
 
 ///////////////////////Calling all the function////////////////

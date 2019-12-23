@@ -3,16 +3,9 @@
 var button = document.getElementById('button-container');
 var script = document.getElementById('instruction-container')
 var userInstruction = document.getElementById('instructions-user')
-// var instructionContainer = document.getElementById('button-instruction');
 var buttonInstruction = document.getElementById('button-instruction');
 var buttonScript = document.getElementById('button-script');
 
-
-////////////--Enoch--Adlib Input//////////
-// var adlibQuestion1 = document.getElementById('adlibQuestionOne').value;
-// var adlibQuestion2 = document.getElementById('adlibQuestionTwo').value;
-// var adlibQuestion3 = document.getElementById('adlibQuestionThree').value;
-// var adlibQuestion4 = document.getElementById('adlibQuestionFour').value;
 
 /////////////////////Save Name///////////////////////////////
 function saveData () {
@@ -55,7 +48,6 @@ function scriptShow() {
 
 function handleClick() {
   saveData();
-  ////////////--Enoch--Adlib Input//////////
   saveAdlibData();
 }
 
