@@ -179,10 +179,10 @@ function handleClick(event) {
     hide(buttonBox);
     hide(questionImage);
     hide(answerBox);
+    new Storingscore(name, score);
     for (var i = 0; i < scoreStorage.length; i++) {
       previousStorage.push(scoreStorage[i]);
     }
-    new Storingscore(name, score);
     highScoreList();
     saveData();
     newPlayerButtonShow();
