@@ -195,7 +195,7 @@ function highScoreList() {
   var h1El = document.createElement('h1')
   h1El.textContent = 'High Score';
   highScore.appendChild(h1El)
-  for (var i = 0; i < 7; i++) {
+  for (var i = 0; i < scoreStorage.length; i++) {
     var trEl = document.createElement('tr');
     var thEl = document.createElement('th');
     thEl.textContent = scoreStorage[i].name;
@@ -244,7 +244,7 @@ function getData() {
 
   if (parseScore !== null) {
     for (var i = 0; i < parseScore.length; i++) {
-      scoreStorage.push(parseScore[i])
+      scoreStorage.push(parseScore[i]);
     }
   }
 }
