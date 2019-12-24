@@ -6,7 +6,7 @@ Enoch Strok
 Beth Hansen  
 Cait Rowland  
 # How to Run this Game
-Deployed Website: https://201-project-group-4.github.io/Star-Hunt-Wars/index.html  
+Deployed Website: https://jinwoov.github.io/Star-Hunt-Wars/html/play.html
 Run terminal and open `live-server` from head repo or open deployed website.
 # User Stories
 - As a user I would like a game, so that I am entertained
