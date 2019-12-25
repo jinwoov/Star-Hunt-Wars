@@ -18,7 +18,7 @@
 
 #button-instruction {
   background-color: green;
-  font-family: monospace;
+  font-family: 'Orbitron', sans-serif;
   margin-bottom: 20px;
   border-radius: 0;
   font-size: 12px;
@@ -28,7 +28,7 @@
 
 #button-script {
   background-color: red;
-  font-family: monospace;
+  font-family: 'Orbitron', sans-serif;
   border-radius: 0;
   font-size: 12px;
   width:100px;
@@ -87,6 +87,7 @@ button {
     font-size: xx-large;
     width: 200px;
     height: 100px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 button:hover {

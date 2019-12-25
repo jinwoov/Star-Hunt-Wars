@@ -348,12 +348,12 @@ main {
 }
 
 #imagebox{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #counter {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     border: 1px black solid;
     height: 30px;
     width: 700px;
@@ -380,7 +380,7 @@ main {
     width: 700px;
 	vertical-align: center;
 	/* border: 2px solid black; */
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 #answer {
@@ -391,7 +391,7 @@ main {
 }
 
 #button-box {
-	margin: 50px 0;
+	margin: 20px 0;
 }
 
 #button-a {
