@@ -432,6 +432,9 @@ main {
 	margin-bottom: 20px;
 	font-family: 'Play', sans-serif;
 }
+#high-score {
+	margin-top: 20px
+}
 
 table {
 margin: 0 auto;

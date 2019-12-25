@@ -3,6 +3,7 @@
   padding: 20px;
   margin: 20px;
   font-size: 30px;
+  font-family: sans-serif;
 }
 
 #buttonns {
@@ -78,6 +79,15 @@
     margin: auto;
     padding: 20px 20px 20px 20px;
 }
+
+input {
+  background-color: black;
+  border: 1px goldenrod solid;
+  color:white;
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 10px;
+}
+
 
 button {
     background-color: goldenrod;
